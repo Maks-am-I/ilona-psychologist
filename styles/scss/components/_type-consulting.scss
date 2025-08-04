@@ -1,0 +1,204 @@
+@use './../helpers/' as *;
+
+.type-consulting {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-l);
+    padding-top: rem(11);
+    padding-bottom: rem(37);
+    padding-inline: rem(20);
+
+    & h2 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: var(--color-light);
+    }
+
+    &__type {
+        width: 100%;
+        padding-top: rem(6);
+        padding-bottom: rem(30);
+        padding-inline: rem(19);
+        background-color: var(--color-light);
+        border-radius: var(--border-radius-s);
+        align-items: center;
+        text-align: center;
+
+        & h3 {
+            margin-bottom: rem(14);
+        }
+
+        & p {
+            @include fluid-text(20, 16);
+
+            line-height: 1;
+            margin-bottom: rem(29);
+        }
+
+        & .button-to-form {
+            @include fluid-text(18, 16);
+            margin-left: rem(18);
+            width: 88%;
+            min-width: auto;
+            background-color: var(--color-light);
+
+            &:hover {
+                background-color: var(--color-fonts);
+            }
+        }
+    }
+
+    &__button-close {
+        position: absolute;
+        top: rem(13);
+        right: rem(13);
+        width: rem(30);
+        height: rem(30);
+        background-image: url('./../../assets/icons/cross.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(45deg);
+        border: 0;
+        border-radius: 50%;
+
+        &:hover {
+            border: rem(1) solid var(--color-fonts);
+        }
+    }
+
+    &__pop-up {
+        z-index: 100;
+        padding-inline: rem(10);
+        padding-top: rem(25);
+        padding-bottom: rem(40);
+        border-radius: var(--border-radius-l);
+        border: 1px solid var(--color-fonts);
+        max-height: rem(715);
+        height: 100dvh;
+        width: 90%;
+        max-width: rem(666);
+        background-color: var(--color-light);
+        position: fixed;
+        top: calc(50%  + rem(60));
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        overflow-y: scroll;
+        text-align: left;
+
+        & h2 {
+            color: var(--color-fonts);
+            font-size: rem(30);
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: rem(30);
+        }
+
+        & p {
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        & ul {
+            padding-left: 0;
+            line-height: 1;
+
+            &:last-of-type {
+                list-style: none;
+                line-height: 0.8;
+                margin-bottom: rem(40);
+
+                & li {
+
+                    &:first-child {
+                        margin-bottom: rem(20);
+                    }
+
+                    & span {
+                        display: inline-block;
+                        margin-top: rem(10);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .type-consulting {
+        padding-left: rem(54);
+        padding-top: rem(72);
+        padding-bottom: rem(104);
+        display: flex;
+        justify-content: center;
+        gap: rem(82);
+
+        & h2 {
+            margin-right: auto;
+        }
+
+        &__type {
+            text-align: left;
+            max-width: rem(400);
+            max-height: rem(373);
+            padding-top: rem(20);
+            padding-bottom: rem(112);
+            border-radius: var(--border-radius-l);
+
+            & h3 {
+                text-transform: capitalize;
+            }
+            
+            & p {
+                margin-bottom: rem(65);
+            }
+
+            & a {
+                margin-left: 0;
+            }
+        }
+    
+        &__pop-up {
+            padding-top: rem(50);
+            padding-bottom: rem(84);
+            padding-left: rem(66);
+            padding-right: rem(38);
+            top: 50%;
+            max-width: fit-content;
+            max-height: fit-content;
+            overflow-y: auto;
+
+            & h3 {
+                font-size: rem(26);
+            }
+
+            & p {
+                margin-bottom: rem(30);
+                font-size: rem(20);
+            }
+
+            & ul {
+                padding-left: rem(30);
+
+                &:last-of-type {
+                    padding-left: 0;
+                    font-size: rem(26);
+
+                    & li:first-child {
+                        margin-bottom: rem(40);
+                    }
+                }
+
+                & span {
+                    margin-top: rem(20);
+                }
+            }
+
+            & button {
+                margin: 0 auto;
+            }
+        }
+    }
+}

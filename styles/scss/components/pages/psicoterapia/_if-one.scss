@@ -1,0 +1,28 @@
+@use './../../../helpers' as *;
+
+.if-one {
+    padding-block: rem(70);
+    padding-inline: rem(20);
+
+    & div {
+        @include fluid-text(30, 20);
+        line-height: 1.1;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: rem(20);
+        border-radius: var(--border-radius-l);
+        box-shadow: 1px 4px 5px 0 rgba(111, 80, 70, 0.1);
+        background: #ece6e3;
+    }
+}
+
+@media (min-width: 960px) {
+    .if-one {
+
+        & div {
+            padding-block: rem(34);
+            padding-inline: rem(68);
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@use './../helpers/' as *;
+
+.question {
+    padding-block: rem(30);
+    padding-inline: rem(20);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-l);
+
+    & div {
+        @include background-gradient;
+        @include flex-block-column;
+        @include fluid-text(30, 16);
+
+        align-items: start;
+        height: rem(126);
+        margin: 0 auto;
+        padding-top: rem(30);
+        padding-left: rem(56);
+        padding-right: rem(28);
+        border: 1px solid var(--color-fonts);
+        border-radius: var(--border-radius-l);
+    
+        & .h3 {
+            @include fluid-text(30, 20);
+
+            line-height: 1.2;
+            letter-spacing: -0.03rem;
+
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                height: rem(15);
+                width: rem(18);
+                top: rem(3);
+                left: rem(-27);
+                background-image: url('./../../../assets/icons/quotation-marks.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        & p {
+            padding-top: rem(10);
+            line-height: 1;
+            letter-spacing: -0.03rem;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .question {
+        padding-top: rem(14);
+        min-height: rem(448);
+        align-content: center;
+
+        & div {
+            max-width: rem(960);
+            min-height: rem(203);
+            padding-left: rem(109);
+            padding-top: rem(66);
+
+            & .h3::before {
+                height: rem(42);
+                width: rem(45);
+                top: rem(-18);
+                left: rem(-64);
+                background-size: contain;
+            }
+        }
+    }
+}

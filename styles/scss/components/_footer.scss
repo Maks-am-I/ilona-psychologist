@@ -1,0 +1,128 @@
+@use './../helpers/' as *;
+
+.footer {
+    background-color: var(--color-accent);
+    border-top-left-radius: var(--border-radius-l);
+    border-top-right-radius: var(--border-radius-l);
+    padding-top: rem(20);
+    padding-bottom: rem(33);
+
+    &__title {
+        padding-top: rem(38);
+        margin-bottom: rem(37);
+
+        & h3 {
+            @include fluid-text(36, 30);
+            text-transform: none;
+            margin: 0;
+        }
+
+        & h2 {
+            @include fluid-text(56, 46);
+            margin-top: 0;
+            margin-bottom: rem(15);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        & span {
+            font-size: rem(20);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(65);
+        margin-bottom: rem(46);
+
+        & div {
+            @include fluid-text(24, 18);
+
+            display: flex;
+            flex-direction: column;
+            gap: rem(5);
+
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__politica {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: rem(1160);
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px solid rgba(67, 49, 43, 0.23);
+        padding-top: rem(5);
+        padding-inline: rem(10);
+
+        & a {
+            @include fluid-text(12, 10);
+
+            flex-shrink: 0;
+        }
+
+        & a:last-of-type {
+            text-align: right;
+            margin-bottom: rem(25);
+        }
+
+        & p {
+            @include fluid-text(11, 8);
+
+            grid-column: 1/-1;
+            max-width: rem(660);
+            padding-inline: rem(10);
+            text-align: center;
+            line-height: 1;
+            margin: 0 auto;
+        }
+        
+    }
+}
+
+@media (min-width: 960px) {
+     .footer {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-main);
+        padding-top: rem(57);
+        
+        &__title {
+            padding-top: rem(28);
+            order: 2;
+        }
+
+        &__menu {
+            order: 1;
+            gap: rem(30);
+            margin-bottom: 0;
+
+            & div > ul {
+                display: flex;
+                gap: rem(30);
+            }
+        }
+
+        &__politica {
+            order: 4;
+            display: flex;
+            justify-content: space-between;
+            gap: rem(10);
+            padding-top: rem(44);
+
+
+            & a:last-of-type {
+                order: 3;
+            }
+
+            & p {
+                order: 2;
+            }
+        }
+    }
+}

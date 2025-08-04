@@ -1,0 +1,75 @@
+@use './../../../helpers/' as *;
+
+.training-sexologist {
+    padding-top: rem(70);
+    padding-bottom: rem(80);
+    padding-inline: rem(20);
+
+    & h2 {
+        @include fluid-text(60, 36);
+        line-height: 0.84;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: rem(24);
+    }
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+        
+        & h3 {
+            @include fluid-text(30, 20);
+
+            margin-top: 0;
+            margin-bottom: rem(38);
+            text-transform: uppercase;
+            line-height: 1
+        }
+
+        & li {
+            @include fluid-text(20, 16);
+            @include background-gradient;
+            border-radius: var(--border-radius-s);
+            padding-block: rem(28);
+            padding-inline: rem(20);
+
+            &:not(:last-of-type) {
+                margin-bottom: rem(30);
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .training-sexologist {
+        padding-inline: rem(40);
+        padding-top: rem(145);
+        padding-bottom: rem(93);
+
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            & h3 {
+                width: 100%;
+                margin-bottom: rem(70);
+            }
+            
+            & li {
+                text-transform: uppercase;
+                line-height: 1;
+                padding-block: rem(40);
+                padding-inline: rem(30);
+                max-width: rem(445);
+                max-height: rem(140);
+                flex: 1;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 0;
+                    margin-right: rem(20);
+                }
+            }
+        }
+    }
+}

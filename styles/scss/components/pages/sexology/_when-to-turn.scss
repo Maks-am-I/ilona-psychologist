@@ -1,0 +1,127 @@
+@use './../../../helpers/' as *;
+
+.when-to-turn {
+    padding-block: rem(40);
+    padding-inline: rem(20);
+    border-radius: var(--border-radius-l);
+    background-color: var(--color-accent);
+
+    & h2 {
+        @include fluid-text(60, 36);
+        text-transform: uppercase;
+        line-height: 0.84;
+        margin-top: 0;
+    }
+
+    & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(30);
+        padding-left: 0;
+        list-style: none;
+
+        & h3 {
+            @include fluid-text(30, 20);
+            margin-top: 0;
+            margin-bottom: rem(68);
+            text-transform: uppercase;
+            line-height: 1.2
+        }
+
+        & > li {
+            @include background-gradient;
+            @include fluid-text(20, 16);
+            max-height: rem(128);
+            max-width: rem(353);
+            //overflow-y: hidden;
+            padding: rem(20);
+            border-radius: var(--border-radius-s);
+            flex: 1 1 353px;
+
+            position: relative;
+
+            & > div {
+                left: 0;
+                max-height: 100%;
+                overflow-y: hidden;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    right: 0;
+                    background-image: url('./../../../../../assets/icons/arrow-bottom.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: rem(10);
+                    height: rem(10);
+                }
+            }
+
+            & > div:hover {
+                @include background-gradient;
+                border-radius: var(--border-radius-s);
+                padding-inline: rem(20);
+                padding-bottom: rem(20);
+                z-index: 2;
+                position: absolute;
+                max-height: fit-content;
+
+                &::before {
+                    display: none
+                }
+            }
+
+            & h4 {
+                @include fluid-text(20, 16);
+                line-height: 1;
+                margin-bottom: rem(8);
+                margin-top: 0;
+            }
+
+            & ul {
+                padding-left: rem(16);
+                list-style: disc;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .when-to-turn {
+        padding-block: rem(70);
+        padding-inline: rem(40);
+
+        & h2 {
+            margin-bottom: rem(25);
+        }
+
+        & > ul {
+            margin-block: 0;
+            gap: rem(40);
+
+            & h3 {
+                margin-bottom: rem(29);
+                line-height: 0.84;
+            }
+
+            & > li {
+                max-width: rem(309);
+                max-height: rem(240);
+                padding-block: rem(30);
+                padding-inline: rem(26);
+
+                & h4 {
+                    margin-bottom: rem(20);
+                }
+
+                & > div:hover {
+                    padding-inline: rem(26);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@use './../../../helpers/' as *;
+
+.education {
+    padding-bottom: rem(51);
+    padding-inline: rem(21);
+    font-weight: 600;
+    line-height: 0.84;
+    text-transform: uppercase;
+
+    & h2 {
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: rem(20);
+    }
+
+    & h3 {
+        @include fluid-text(30, 18);
+
+        margin-top: 0;
+        margin-bottom: rem(33);
+        font-weight: 600;
+    }
+
+    & ul {
+        @include fluid-text(26, 18);
+
+        border: 1px solid var(--color-fonts);
+        border-radius: var(--border-radius-s);
+        padding-inline: rem(10);
+        list-style: none;
+        padding-bottom: rem(19);
+
+        & h4 {
+            @include fluid-text(26, 18);
+            margin-top: rem(16);
+            margin-bottom: rem(15);
+        }
+
+        & li:not(:last-of-type) {
+            margin-bottom: rem(15);
+        }
+    }
+
+    & ul:first-of-type {
+            margin-bottom: rem(37);
+    }
+}
+
+@media (min-width: 960px) {
+    .education {
+        padding-top: rem(100);
+        padding-bottom: rem(92);
+        padding-inline: rem(40);
+
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 2.8%;
+            right: 3%;
+            height: rem(325);
+            width: rem(325);
+            background-image: url('./../../assets/images/education.png');
+            border-radius: 50%;
+            background-size: contain;
+            background-position: center;
+        }
+
+        & h2 {
+            margin-bottom: rem(30);
+        }
+
+        & h3 {
+            margin-bottom: rem(70);
+        }
+
+        & ul {
+            border-radius: var(--border-radius-l);
+            padding-block: rem(40);
+            padding-inline: rem(40);
+            letter-spacing: 0.04rem;
+
+            &  h4 {
+                margin-top: rem(3);
+                margin-bottom: rem(50);
+            }
+
+            & li {
+                &:not(:last-of-type) {
+                    margin-bottom: rem(50);
+                }
+            }
+        }
+    }
+}

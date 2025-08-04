@@ -1,0 +1,46 @@
+@use './../../../helpers' as *;
+
+.about-work {
+    padding-inline: rem(20);
+    padding-top: rem(54);
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+
+        & li {
+            @include fluid-text(30, 16);
+            line-height: 1;
+            letter-spacing: -0.03rem;
+            padding-block: rem(30);
+            padding-inline: rem(20);
+            box-shadow: 1px 4px 5px 0 rgba(111, 80, 70, 0.1);
+            background: #ece6e3;
+            height: rem(140);
+
+            &:not(:last-of-type) {
+                margin-bottom: rem(30);
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .about-work {
+        padding-inline: rem(40);
+        padding-top: rem(95);
+
+        & ul {
+            & li {
+                line-height: 1.1;
+                padding-inline: rem(53);
+                height: rem(199);
+                align-content: center;
+
+                &:not(:last-of-type) {
+                    margin-bottom: rem(40);
+                }
+            }
+        }
+    }
+}

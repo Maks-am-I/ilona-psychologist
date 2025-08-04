@@ -1,0 +1,54 @@
+@use './../../../helpers/' as *;
+
+.what-do {
+    padding-inline: rem(20);
+
+    &__wrap {
+        padding-block: rem(20);
+        padding-inline: rem(10);
+        background: #ece6e3;
+        border-radius: var(--border-radius-s);
+
+        & h2 {
+            @include fluid-text(60, 36);
+            line-height: 1.2;
+            letter-spacing: -0.01rem;
+            margin-top: 0;
+            margin-bottom: rem(21);
+            text-transform: uppercase
+        }
+
+        
+    }
+
+    &__accordion {
+        & ul {
+            list-style: disc;
+            padding-left: rem(24);
+        }
+        
+        &__header {
+            padding-block: rem(7);
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .what-do {
+        padding-inline: rem(40);
+
+        &__wrap {
+            padding-top: rem(70);
+            padding-bottom: rem(57);
+            padding-inline: rem(40);
+
+            & h2 {
+                margin-bottom: rem(40);
+            }
+        }
+
+        &__accordion {
+            max-width: rem(1280);
+        }
+    }
+}

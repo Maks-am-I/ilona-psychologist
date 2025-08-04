@@ -1,0 +1,97 @@
+@use './../../../helpers/' as *;
+
+.my-approach {
+    @include fluid-text(26, 16);
+    letter-spacing: -0.03rem;
+    line-height: 1;
+
+    padding-inline: rem(20);
+    padding-top: rem(20);
+    padding-bottom: rem(29);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-l);
+
+    &__wrap {
+        padding: rem(30) rem(20);
+        background-color: var(--color-main);
+        border-radius: var(--border-radius-l);
+        border: 1px solid var(--color-fonts);
+
+        & h2 {
+            @include fluid-text(60, 20);
+
+            text-transform: uppercase;
+            margin-top: rem(33);
+            margin-bottom: rem(13);
+        }
+
+        & a {
+            @include fluid-text(22, 16);
+
+            text-align: left;
+            max-height: rem(60);
+            min-width: rem(100);
+            max-width: rem(486);
+            height: rem(50);
+
+            &::after {
+                height: rem(34);
+                width: rem(34);
+                background-size: rem(25);
+            }
+        }
+    }
+
+    &__focus-for {
+        line-height: 1.17;
+        letter-spacing: unset;
+        border-left: rem(1) solid var(--color-fonts);
+        font-style: italic;
+        margin-top: rem(33);
+        margin-bottom: rem(39);
+        padding-left: rem(11);
+        padding-right: rem(3);
+    }
+}
+
+@media (min-width: 960px) {
+    .my-approach {
+        padding: rem(47) rem(40) rem(53);
+
+        &__wrap {
+            padding-block: rem(70);
+            padding-left: rem(30);
+            padding-right: rem(55);
+
+            & p:not(:last-of-type) {
+                letter-spacing: 0.04rem;
+                line-height: 1.2;
+            }
+
+            & h2 {
+                margin-top: rem(68);
+                margin-bottom: rem(30);
+            }
+
+            & button {
+                margin-left: rem(50);
+                max-width: rem(486);
+                height: rem(60);
+
+                &::after {
+                    width: rem(46);
+                    height: rem(46);
+                    background-size: unset;
+                }
+            }
+        }
+
+        &__focus-for {
+            margin-bottom: rem(61);
+            margin-top: rem(70);
+            margin-left: rem(50);
+            padding-left: rem(28);
+            padding-right: rem(22);
+        }
+    }
+}

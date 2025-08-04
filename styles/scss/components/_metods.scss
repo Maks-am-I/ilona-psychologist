@@ -1,0 +1,48 @@
+@use './../helpers/' as *;
+
+.metods {
+    display: flex;
+    gap: rem(30);
+    padding-top: rem(74);
+    flex-wrap: wrap;
+
+    & div {
+        padding-bottom: rem(30);
+        padding-left: rem(20);
+        padding-right: rem(57);
+        background-color: var(--color-accent);
+        border-radius: var(--border-radius-l);
+        font-weight: 600;
+
+        & h2 {
+            @include fluid-text(48, 36);
+
+            text-transform: uppercase;
+            margin-bottom: rem(20);
+        }
+
+        & p {
+            line-height: 1;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .metods {
+        flex-wrap: nowrap;
+        padding-top: rem(177);
+        gap: rem(45);
+
+        & div {
+            padding-top: rem(21);
+            padding-bottom: rem(97);
+            padding-left: rem(30);
+            max-width: calc(50% - rem(22));
+
+            & h2 {
+                text-align: center;
+                margin-bottom: rem(41);
+            }
+        }
+    }
+}

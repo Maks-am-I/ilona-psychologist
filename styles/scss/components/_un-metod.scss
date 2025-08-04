@@ -1,0 +1,87 @@
+@use './../helpers/' as *;
+
+.un-metod {
+    padding-top: rem(40);
+    padding-bottom: rem(69);
+    padding-inline: rem(20);
+
+    & h2 {
+        @include fluid-text(48, 36);
+
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    & h3 {
+        margin-top: rem(20);
+        line-height: 0.84;
+    }
+
+    & ul {
+        @include fluid-text(20, 16);
+
+        padding-left: rem(25);
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    & p {
+        @include fluid-text(26, 18);
+
+        margin-top: rem(58);
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    & div {
+        margin-top: rem(46);
+        background-image: url('./../../assets/images/un-metods_mobile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: rem(258);
+    }
+}
+
+@media (min-width: 960px) {
+    .un-metod {
+        padding-top: rem(135);
+        padding-bottom: rem(221);
+        padding-right: 26%;
+        padding-left: rem(40);
+        position: relative;
+
+        & h2 {
+            line-height: 1;
+        }
+
+        & h3 {
+            margin-top: rem(32);
+            margin-bottom: rem(57);
+            letter-spacing: 0.04rem;
+        }
+
+        & ul {
+            letter-spacing: 0.04rem;
+        }
+
+        & p {
+            margin-top: rem(94);
+            letter-spacing: 0.04rem;
+        }
+
+        & div {
+            position: absolute;
+            margin-top: 0;
+            right: 3%;
+            top: 21%;
+            width: 19%;
+            max-width: rem(258);
+            height: 100%;
+            max-height: rem(621);
+            background-image: url('./../../assets/images/un-metods_desktop.png');
+            background-size: cover;
+        }
+    }
+}

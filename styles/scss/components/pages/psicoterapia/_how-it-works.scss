@@ -1,0 +1,60 @@
+@use './../../../helpers' as *;
+
+.how-it-works {
+    @include fluid-text(24, 16);
+    line-height: 1;
+    letter-spacing: -0.03rem;
+
+    padding-inline: rem(20);
+    padding-top: rem(45);
+    padding-bottom: rem(50);
+    border-radius: var(--border-radius-l);
+    background-color: var(--color-accent);
+
+    & h2 {
+        @include fluid-text(60, 36);
+        color: var(--color-main);
+        text-transform: uppercase;
+        line-height: 0.84;
+        margin-top: 0;
+    }
+
+    & ul {
+        list-style: none;
+        background-color: var(--color-main);
+        border-radius: var(--border-radius-s);
+        padding-block: rem(23);
+        padding-inline: rem(20);
+        margin-bottom: 0;
+
+        & li {
+            &:not(:last-of-type) {
+                margin-bottom: rem(17);
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .how-it-works {
+        padding-inline: rem(40);
+        padding-block: rem(70);
+
+        & h2 {
+            margin-bottom: rem(74);
+        }
+
+        & ul {
+            border-radius: var(--border-radius-l);
+            max-width: rem(1200);
+            margin: 0 auto;
+            padding: rem(60);
+
+            & li {
+                &:not(:last-of-type) {
+                    margin-bottom: rem(25);
+                }
+            }
+        }
+    }
+}

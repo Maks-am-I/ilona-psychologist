@@ -1,0 +1,75 @@
+@use './../helpers/' as *;
+
+.reviews {
+    padding-inline: rem(20);
+    padding-top: rem(40);
+    padding-bottom: rem(70);
+
+    & h2 {
+        text-transform: uppercase;
+        margin-bottom: rem(56);
+
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: rem(-32);
+            right: 0;
+            width: rem(32.5);
+            height: rem(5);
+            background-image: url('./../../assets/icons/arrow-rigth.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    & ul {
+        display: flex;
+        align-items: center;
+        gap: rem(19);
+        list-style: none;
+        overflow-x: scroll;
+
+        & li {
+            @include background-gradient;
+            @include fluid-text(20, 16);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: rem(216);
+            min-width: rem(353);
+            padding: 0 rem(19);
+            border: 1px solid var(--color-accent);
+            border-radius: var(--border-radius-s);
+
+            & p {
+                line-height: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .reviews {
+        padding-top: rem(59);
+        padding-left: rem(40);
+        padding-bottom: rem(290);
+
+    
+        & h2 {
+            margin-bottom: rem(69);
+        }
+
+        & ul {
+            min-height: rem(270);
+
+            & li {
+                min-width: rem(760);
+                padding-top: rem(80);
+                padding-bottom: rem(90);
+                padding-inline: rem(40);
+            }
+        }
+    }
+}

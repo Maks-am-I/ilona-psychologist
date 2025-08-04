@@ -1,0 +1,127 @@
+@use 'helpers' as *;
+
+body {
+    @include fluid-text(26, 16);
+
+    font-family: var(--font-family-base);
+    background-color: var(--color-main);
+    color: var(--color-fonts);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    font-weight: 600;
+}
+
+h1, .h1 {
+    @include fluid-text(86, 46);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: rem(16);
+}
+
+h2, .h2 {
+    @include fluid-text(60, 36);
+}
+
+h1, .h1,
+h2, .h2 {
+    line-height: 0.84;
+}
+
+h3, .h3 {
+    @include fluid-text(30, 18);
+    text-transform: uppercase;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-main);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}
+
+.button-to-form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: rem(22);
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    padding-left: rem(20);
+    position: relative;
+    color: var(--color-fonts);
+
+    height: var(--height-button);
+    min-width: rem(277);
+    max-width: var(--width-button);
+    width: 100%;
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    transition-duration: 0.3s;
+
+
+    &:hover {
+        color: var(--color-main);
+        background-color: var(--color-fonts);
+        transition-duration: 0.3s;
+
+        &::after {
+            background-color: var(--color-main);
+            background-image: url('./../../assets/icons/arrow-rigth-brown.svg');
+            transition-duration: 0.3s;
+
+        }
+    }
+
+    &::after {        
+        @include square(rem(46));
+
+        content: '';
+        position: absolute;
+        background-color: var(--color-fonts);
+        border-radius: var(--border-radius-button);
+        background-image: url('./../../assets/icons/arrow_left_white.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 3%;
+        transition-duration: 0.3s;
+
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    margin-right: auto;
+    padding-left: rem(20);
+
+    & a {
+        display: inline-flex;
+        height: rem(18);
+        width: rem(18);
+    }
+
+    @media (min-width: 960px) {
+    }
+}

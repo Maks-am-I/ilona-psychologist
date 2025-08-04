@@ -1,0 +1,22 @@
+@use 'sass:math';
+@use 'functions';
+
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: functions.fluid($max, $min);
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin flex-block-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin background-gradient {
+  box-shadow: 1px 4px 5px 0 rgba(111, 80, 70, 0.1);
+  background: linear-gradient(0deg, #f5f1ee 0%, #fff5ee 100%);
+} 

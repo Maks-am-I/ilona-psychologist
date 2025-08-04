@@ -1,0 +1,62 @@
+@use './../../../helpers/' as *;
+
+.psicoterapia {
+    padding-top: rem(10);
+    padding-bottom: rem(105);
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: rem(38);
+
+    &__title {
+        & h1 {
+            @include fluid-text(86, 46);
+        }
+    }
+
+    &__main-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: rem(10);
+
+        &-desktop,
+        &-svg {
+            display: none;
+        }
+
+        &-mobile {
+            width: 94.21%;
+            max-width: rem(442);
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .psicoterapia {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 7.7%;
+        padding-right: 9%;
+        padding-top: rem(90);
+        padding-bottom: rem(157);
+
+        &__title {
+            padding-top: rem(67);
+        }
+
+        &__main-photo {
+            max-width: rem(456);
+            width: 38%;
+
+            &-desktop,
+            &-svg {
+                display: unset;
+            }
+
+            &-mobile {
+                display: none;
+            }
+        }
+    }
+}

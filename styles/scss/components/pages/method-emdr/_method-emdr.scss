@@ -1,0 +1,108 @@
+@use './../../../helpers/' as *;
+
+.method-emdr {
+    padding-inline: rem(20);
+    padding-bottom: rem(39);
+
+    &__title {
+        @include fluid-text(26, 20);
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: rem(30);
+
+
+        & h1 {
+            @include fluid-text(86, 46);
+
+            margin-top: rem(18);
+            margin-bottom: rem(20);
+        }
+
+        & h2 {
+            @include fluid-text(26, 20);
+
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__main-photo {
+        & img {
+            max-width: rem(428);
+            max-height: rem(428);
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &-desktop {
+            display: none;
+        }
+
+        &-svg {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .method-emdr {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 9%;
+        padding-top: rem(100);
+        padding-bottom: rem(109);
+
+        &__title {
+            flex: 1 1 0%;
+            padding-top: rem(110);
+            text-align: left;
+
+            & h1 {
+                text-align: left;
+                margin-bottom: rem(41);
+            }
+
+            & h2 {
+                letter-spacing: 0.06rem;
+                margin-bottom: rem(37);
+            }
+
+            & p {
+                max-width: rem(804);
+            }
+        }
+
+        &__main-photo {
+            max-width: fit-content;
+            flex: 1 1 0%;
+            min-width: 0;
+            position: relative;
+            display: flex;
+            justify-content: end;
+
+            & img {
+                margin: unset;
+                margin-left: auto;
+            }
+
+            &-desktop {
+                display: unset;
+                margin-right: auto;
+            }
+
+            &-mobile {
+                display: none;
+            }
+
+            &-svg {
+                position: absolute;
+                display: unset;
+                border-radius: 100%;
+                filter: blur(400px);
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use './../helpers/' as *;
+
+.nav-menu {
+    
+    font-weight: 600;
+    background-color: var(--color-main);
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: rem(13);
+        padding-block: rem(15);
+    }
+
+    & li {
+        list-style: none;
+    }
+
+    & a {
+        @include fluid-text(24, 16);
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .nav-menu {
+        background-color: unset;
+
+        & ul {
+            flex-direction: row;
+            padding-block: 0;
+            padding-left: 0;
+            gap: rem(30);
+        }
+    }
+}

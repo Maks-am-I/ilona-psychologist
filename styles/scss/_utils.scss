@@ -1,0 +1,47 @@
+@use 'helpers' as *;
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.container-not-padding-x {
+    padding-inline: 0;
+}
+
+.not-scroll {
+    overflow: hidden;
+    transition-duration: var(--transition-duration);
+    position: relative;
+    
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition-duration: var(--transition-duration);
+    }
+}
+
+.not-visible {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: var(--transition-duration);
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: var(--transition-duration);
+}
+
+@media (min-width: 960px) {
+    .container {
+        max-width: 1440px;
+        padding-inline: var(--container-padding-x_desktop);
+    }
+}

@@ -1,0 +1,58 @@
+@use './../../../helpers/' as *;
+
+.results-emdr {
+    padding-block: rem(30);
+    padding-inline: rem(20);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-l);
+
+    & h2 {
+        @include fluid-text(60, 36);
+
+        text-transform: uppercase;
+        color: #f5f1ee;
+        line-height: 0.84;
+        margin-top: 0;
+    }
+
+    & ul {
+        @include fluid-text(24, 16);
+        border-radius: var(--border-radius-s);
+        padding: rem(20);
+        line-height: 1;
+        letter-spacing: -0.03rem;
+        background-color: var(--color-main);
+        list-style: none;
+        margin-bottom: 0;
+
+        & h3 {
+            @include fluid-text(24, 16);
+            font-weight: 500;
+            text-transform: none;
+            margin-top: 0;
+        }
+
+        & li:not(:last-of-type) {
+            margin-bottom: rem(15);
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .results-emdr  {
+        padding-block: rem(70);
+        padding-inline: rem(40);
+
+        & h2 {
+            margin-bottom: rem(70);
+        }
+
+        & ul {
+            max-width: rem(1200);
+            padding: rem(60) rem(60) rem(60) rem(50);
+            margin: 0 auto;
+            line-height: 1;
+            letter-spacing: normal;
+        }
+    }
+}

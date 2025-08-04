@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+
+:root {
+    --font-family-base: 'CormorantGaramond', sans-serif;
+
+    --color-main: #F5F1EE;
+    --color-accent: #BF9483;
+    --color-fonts: #43312B;
+    --color-light: #ffffff;
+    --color-underline: #6F5046;
+
+    --border-radius-button: 100px;
+    --height-button: 60px;
+    --width-button: 286px;
+    --border-button: 2px solid var(--color-fonts);
+
+    --border-radius-s: 4px;
+    --border-radius-input: 8px;
+    --border-radius-l: 10px;
+
+    --container-width: #{rem(373)}; // #{} т.к. sass некорректно обрабатывает функции находящиеся в переменных
+    --container-padding-x_mobile: #{rem(10)};
+    --container-padding-x_desktop: #{rem(40)};
+
+    --transition-duration: 0.2s;
+}

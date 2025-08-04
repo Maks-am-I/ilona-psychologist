@@ -1,0 +1,53 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'components/header';
+@use 'components/nav-menu';
+@use 'components/button-burger';
+@use 'components/hero';
+@use 'components/question';
+@use 'components/about-me';
+@use 'components/metods';
+@use 'components/un-metod';
+@use 'components/type-consulting';
+@use 'components/reviews';
+@use 'components/callback';
+@use 'components/form';
+@use 'components/contacts';
+@use 'components/footer';
+
+@use 'components/pages/chi-sono/chi-sono';
+@use 'components/pages/chi-sono/my-approach';
+@use 'components/pages/chi-sono/professional-experience';
+@use 'components/pages/chi-sono/education';
+@use 'components/pages/chi-sono/package';
+
+@use 'components/pages/hypnosis/hypnosis';
+@use 'components/pages/hypnosis/can-use';
+@use 'components/pages/hypnosis/areas-of-hypnosis';
+@use 'components/pages/hypnosis/important-considerations';
+@use 'components/pages/hypnosis/hypnosis-is';
+
+@use 'components/pages/method-emdr/method-emdr';
+@use 'components/pages/method-emdr/benefits-of-emdr';
+@use 'components/pages/method-emdr/areas-emdr';
+@use 'components/pages/method-emdr/requirements';
+@use 'components/pages/method-emdr/results-emdr';
+@use 'components/pages/method-emdr/important';
+
+@use 'components/pages/psicoterapia/psicoterapia';
+@use 'components/pages/psicoterapia/problematic';
+@use 'components/pages/psicoterapia/if-one';
+@use 'components/pages/psicoterapia/focus-in-my-work';
+@use 'components/pages/psicoterapia/how-it-works';
+@use 'components/pages/psicoterapia/about-work';
+
+@use 'components/pages/sexology/sexology';
+@use 'components/pages/sexology/what-do';
+@use 'components/pages/sexology/training-sexologist';
+@use 'components/pages/sexology/when-to-turn';
+@use 'components/pages/sexology/approach';
+

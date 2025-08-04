@@ -1,0 +1,133 @@
+@use './../helpers/' as *;
+
+.header {
+    background-color: var(--color-main);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: end;
+    height: rem(54);
+    padding-top: rem(10);
+
+    & .header__nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100dvw;
+        transition: top 0.3s;
+
+        &.active {
+            top: rem(54);
+        }
+    }
+
+    & .header__button-to-form {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .header {
+        height: rem(100);
+        padding-bottom: rem(13);
+        align-items: center;
+        justify-content: space-between;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: rem(20);
+            max-width: calc(100% - rem(40));
+            width: 100%;
+            height: rem(1);
+            background: rgba(111, 80, 70, 0.2);
+        }
+
+        &__links {
+            position:fixed;
+            left: 0;
+            top: rem(160);
+            flex-direction: column;
+            opacity: 0.5;
+            transition-duration: 0.3s;
+            padding: rem(10);
+
+            & a {
+                opacity: 0.5;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            &:hover {
+                @include background-gradient;
+                opacity: 1;
+                transition-duration: 0.3s;
+                border-bottom-right-radius: var(--border-radius-s);
+                border-top-right-radius: var(--border-radius-s);
+            }
+        }
+
+        & .header__nav-menu {
+           position: static;
+           width: fit-content;
+           flex-direction: unset;
+           flex-shrink: 0;
+
+            & a {
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        bottom: 0;
+                        transition-duration: 0.3s;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: rem(5);
+                    left: 0;
+                    width: 100%;
+                    height: rem(1.5);
+                    background-color: var(--color-fonts);
+                    transition-duration: 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        & .header__button-to-form {
+            @include fluid-text(22, 16);
+
+            display: flex;
+            height: rem(60);
+            min-width: rem(100);
+            max-width: rem(286);
+            flex-shrink: 1;
+            margin-left: rem(20);
+            text-align: start;
+
+            &::after {
+                top: 8%;
+
+                @media (max-width: 1001px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

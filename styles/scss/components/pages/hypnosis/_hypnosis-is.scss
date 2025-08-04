@@ -1,0 +1,37 @@
+@use './../../../helpers/' as *;
+
+.hypnosis-is {
+    padding: rem(20);
+    margin-bottom: rem(70);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-l);
+
+    & div {
+        @include fluid-text(30, 20);
+
+        border-radius: var(--border-radius-l);
+        background-color: var(--color-main);
+        border: 1px solid var(--color-fonts);
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: -0.03rem;
+        font-weight: 600;
+        padding: rem(20);
+    }
+}
+
+@media (min-width: 960px) {
+    .hypnosis-is {
+        padding-block: rem(50);
+        padding-inline: rem(40);
+
+        & div {
+            letter-spacing: normal;
+            line-height: 1.1;
+            text-align: center;
+            padding-inline: rem(97);
+            padding-top: rem(47);
+            padding-bottom: rem(53);
+        }
+    }
+}
