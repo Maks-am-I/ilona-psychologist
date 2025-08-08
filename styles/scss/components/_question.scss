@@ -9,19 +9,18 @@
     & div {
         @include background-gradient;
         @include flex-block-column;
-        @include fluid-text(30, 16);
+        @include fluid-text(30, 22);
 
         align-items: start;
-        height: rem(126);
         margin: 0 auto;
-        padding-top: rem(30);
+        padding-block: rem(30);
         padding-left: rem(56);
         padding-right: rem(28);
         border: 1px solid var(--color-fonts);
         border-radius: var(--border-radius-l);
     
         & .h3 {
-            @include fluid-text(30, 20);
+            @include fluid-text(30, 22);
 
             line-height: 1.2;
             letter-spacing: -0.03rem;
@@ -34,7 +33,7 @@
                 width: rem(18);
                 top: rem(3);
                 left: rem(-27);
-                background-image: url('./../../../assets/icons/quotation-marks.svg');
+                background-image: url('./../../assets/icons/quotation-marks.svg');
                 background-repeat: no-repeat;
                 background-position: center;
             }

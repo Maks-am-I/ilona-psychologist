@@ -18,18 +18,24 @@
     }
 
     & ul {
-        @include fluid-text(20, 16);
+        @include fluid-text(22, 22);
 
         padding-left: rem(25);
         font-weight: 600;
         line-height: 1;
+
+        & li {
+            &:not(:last-of-type) {
+                margin-bottom: rem(10);
+            }
+        }
     }
 
     & p {
-        @include fluid-text(26, 18);
+        @include fluid-text(26, 22);
 
         margin-top: rem(58);
-        line-height: 1;
+        line-height: 1.2;
         font-weight: 600;
     }
 

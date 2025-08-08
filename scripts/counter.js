@@ -7,7 +7,7 @@ const arr_count = [years, expirience, patient, hours];
 // Максимальные значения счетчиков
 const maxValues = [12, 20, 700, 10000];
 // Длительность анимации в миллисекундах
-const duration = 5000;
+const duration = 2000;
 // Время начала анимации
 let startTime = null;
 

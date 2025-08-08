@@ -9,7 +9,7 @@
         padding-left: 0;
 
         & li {
-            @include fluid-text(30, 16);
+            @include fluid-text(30, 22);
             line-height: 1;
             letter-spacing: -0.03rem;
             padding-block: rem(30);

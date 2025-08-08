@@ -26,7 +26,7 @@
         }
 
         & span {
-            font-size: rem(20);
+            font-size: rem(22);
         }
     }
 
@@ -38,7 +38,7 @@
         margin-bottom: rem(46);
 
         & div {
-            @include fluid-text(24, 18);
+            @include fluid-text(24, 22);
 
             display: flex;
             flex-direction: column;

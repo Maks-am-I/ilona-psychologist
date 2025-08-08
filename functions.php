@@ -4,6 +4,7 @@
     	wp_enqueue_style( 'style', get_template_directory_uri() . '/styles/css/style.css' );
     	
     	wp_enqueue_script( 'buttonBurger', get_template_directory_uri() . '/scripts/button-burger.js', array(), 'null', true );
+    	wp_enqueue_script( 'buttonUp', get_template_directory_uri() . '/scripts/button-up.js', array(), 'null', true );
     	wp_enqueue_script( 'accordeon', get_template_directory_uri() . '/scripts/accordeon.js', array(), 'null', true );
     	wp_enqueue_script( 'counter', get_template_directory_uri() . '/scripts/counter.js', array(), 'null', true );
     	wp_enqueue_script( 'writer', get_template_directory_uri() . '/scripts/writer.js', array(), 'null', true );

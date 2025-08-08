@@ -11,7 +11,7 @@
     }
 
     & > p {
-        @include fluid-text(30, 20);
+        @include fluid-text(30, 22);
         text-transform: uppercase;
         line-height: 1.2;
         font-weight: 600;
@@ -25,14 +25,14 @@
         list-style-image: url('./../../assets/icons/ellipse-list.svg');
 
         & h3 {
-            @include fluid-text(24, 20);
+            @include fluid-text(24, 22);
             letter-spacing: -0.03rem;
             line-height: 1.2;
             margin-bottom: rem(10);
         }
 
         & p {
-            @include fluid-text(24, 16);
+            @include fluid-text(24, 22);
             line-height: 1;
             letter-spacing: -0.03rem;
         }

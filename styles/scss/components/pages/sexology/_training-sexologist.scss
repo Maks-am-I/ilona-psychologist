@@ -18,7 +18,7 @@
         padding-left: 0;
         
         & h3 {
-            @include fluid-text(30, 20);
+            @include fluid-text(30, 22);
 
             margin-top: 0;
             margin-bottom: rem(38);
@@ -27,7 +27,7 @@
         }
 
         & li {
-            @include fluid-text(20, 16);
+            @include fluid-text(22, 22);
             @include background-gradient;
             border-radius: var(--border-radius-s);
             padding-block: rem(28);

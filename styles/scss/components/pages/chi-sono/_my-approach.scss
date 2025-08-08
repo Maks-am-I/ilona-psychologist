@@ -1,7 +1,7 @@
 @use './../../../helpers/' as *;
 
 .my-approach {
-    @include fluid-text(26, 16);
+    @include fluid-text(26, 22);
     letter-spacing: -0.03rem;
     line-height: 1;
 
@@ -18,7 +18,7 @@
         border: 1px solid var(--color-fonts);
 
         & h2 {
-            @include fluid-text(60, 20);
+            @include fluid-text(60, 22);
 
             text-transform: uppercase;
             margin-top: rem(33);
@@ -26,7 +26,7 @@
         }
 
         & a {
-            @include fluid-text(22, 16);
+            @include fluid-text(22, 22);
 
             text-align: left;
             max-height: rem(60);

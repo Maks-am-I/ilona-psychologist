@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.unobserve(entry.target); // Прекращаем наблюдение
         }
     });
-    }, { threshold: 0.1,  // Срабатывает когда 10% элемента видно
-       rootMargin: '100px 0px 0px 0px'
+    }, { threshold: 0.01,  // Срабатывает когда 10% элемента видно
+       rootMargin: '200px 0px 0px 0px'
     }
 );
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i < fullText.length) {
         textElement.textContent += fullText[i];
         i++;
-        setTimeout(type, 100); // Скорость печати
+        setTimeout(type, 50); // Скорость печати
       } else {
         textElement.classList.remove('animating'); // Останавливаем курсор
       }

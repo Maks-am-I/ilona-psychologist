@@ -5,7 +5,7 @@
     padding-inline: rem(20);
 
     & div {
-        @include fluid-text(30, 20);
+        @include fluid-text(30, 22);
         line-height: 1.1;
         text-align: center;
         text-transform: uppercase;

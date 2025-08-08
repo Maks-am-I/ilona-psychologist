@@ -21,7 +21,7 @@
     }
 
     &__text {
-        @include fluid-text(24, 16);
+        @include fluid-text(24, 22);
         
         letter-spacing: -0.03rem;
         line-height: 1;

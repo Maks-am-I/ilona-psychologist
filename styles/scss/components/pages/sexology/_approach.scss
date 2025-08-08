@@ -25,7 +25,7 @@
             margin-top: 0;
 
             & h3 {
-                @include fluid-text(30, 20);
+                @include fluid-text(30, 22);
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: rem(30);
@@ -33,7 +33,7 @@
             }
 
             & li {
-                @include fluid-text(30, 16);
+                @include fluid-text(30, 22);
                 line-height: 1;
                 letter-spacing: -0.03rem;
                 margin-left: rem(25);

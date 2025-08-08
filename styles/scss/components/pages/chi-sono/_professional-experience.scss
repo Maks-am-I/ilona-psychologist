@@ -1,7 +1,7 @@
 @use './../../../helpers/' as *;
 
 .professional-experience {
-    @include fluid-text(24, 16);
+    @include fluid-text(24, 22);
     
     padding-block: rem(70);
     padding-inline: rem(20);

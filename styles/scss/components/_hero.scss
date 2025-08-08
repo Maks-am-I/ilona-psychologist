@@ -9,7 +9,7 @@
 
         & .h3 {
             @include background-gradient;
-            @include fluid-text(34, 20);
+            @include fluid-text(34, 22);
 
             padding-top: rem(13);
             padding-bottom: rem(8);
@@ -25,7 +25,7 @@
         }
 
         & span {
-            @include fluid-text(26, 20);
+            @include fluid-text(26, 22);
 
             text-transform: uppercase;
             font-weight: 600;
@@ -62,7 +62,7 @@
             }
 
             & span:last-child {
-                @include fluid-text(22, 16);
+                @include fluid-text(22, 22);
 
                 margin-top: rem(-10);
             }

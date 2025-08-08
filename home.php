@@ -115,6 +115,7 @@ Template Name: Home
                     e gestione del dolore, favorendo il cambiamento 
                     attraverso il potenziamento delle risorse inconsce
                 </p>
+                <a href="<?php echo home_url('hipnosis'); ?>" class="button-to-form">segue</a>
             </div>
             <div>
                 <h2>metodo emdr</h2>
@@ -125,6 +126,7 @@ Template Name: Home
                     attacchi di panico e stress post-traumatico, aiutando a 
                     rielaborare i ricordi dolorosi in modo adattivo
                 </p>
+                <a href="<?php echo home_url('method-emdr'); ?>" class="button-to-form">segue</a>
             </div>
         </section>
         <section class="un-metod container">
@@ -147,7 +149,7 @@ Template Name: Home
                     master in Psicologia Giuridica
                 </li>
                 <li>
-                    studio della Psicologia Neuro-Linguistica
+                    studio della Psicologia Neuro-Linguistrica
                 </li>
                 <li>
                     studio della tecnica psicoterapeutica dell'EMDR 

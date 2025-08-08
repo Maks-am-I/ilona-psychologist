@@ -32,7 +32,7 @@
 
         & li {
             @include background-gradient;
-            @include fluid-text(20, 16);
+            @include fluid-text(22, 22);
 
             display: flex;
             justify-content: center;

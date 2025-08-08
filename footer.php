@@ -1,10 +1,10 @@
             <section id="callback" class="callback container">
             <h2>Richiedi appuntamento</h2>
-            <p>
+            <!-- <p>
                 Would you like to discuss your project or get 
                 a consultation? Fill out the form, and our team 
                 will get back to you as soon as possible
-            </p>
+            </p> -->
             <div class="callback__form form">
                 <div>
                     <label for="name" title="Nome, Cognome">Nome, Cognome</label>
@@ -68,10 +68,6 @@
                 ?>
                     <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="_blank"><?php echo $link_title ; ?></a>
                 <?php } ?>
-                <!--<a href="https://maps.app.goo.gl/N77sgmCx9VTQvSjw9" target="_blank">
-                    Via Brigata Reggio, 30 a Reggio Emilia 
-                    (di fianco agli uffici della Polizia Municipale)
-                </a>-->
             </address>
             <p>
                 Prego di non contattarmi a fini commerciali e/o pubblicitari. <br>
@@ -123,7 +119,7 @@
                 <?php endif; ?>
             </div>
             <div class="contacts__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.47456303386!2d10.605774711721585!3d44.70992538332763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801c7484985111%3A0xf36d9e471253d90e!2zVmlhIEJyaWdhdGEgUmVnZ2lvLCAzMCwgNDIxMjQgUmVnZ2lvIEVtaWxpYSBSRSwg0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2sru!4v1754209360007!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.47456303386!2d10.605774711721585!3d44.70992538332763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47801c7484985111%3A0xf36d9e471253d90e!2zVmlhIEJyaWdhdGEgUmVnZ2lvLCAzMCwgNDIxMjQgUmVnZ2lvIEVtaWxpYSBSRSwg0JjRgtCw0LvQuNGP!5e0!3m2!1sit!2sit!4v1754209360007!5m2!1sit!2sit&hl=it&region=IT" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -136,11 +132,6 @@
             <span>sessuologo</span>
         </div>
         <nav class="footer__menu container">
-            <!-- <div>
-                <a href="#">Psicoterapia</a>
-                <a href="#">Sessuologia</a>
-                <a href="#">Ipnoterapia</a>  
-            </div> -->
             <?php 
                 wp_nav_menu(
                     array(
@@ -157,15 +148,9 @@
                     )
                 );
             ?> 
-            <!-- <div>
-                <a href="#">Metodo EMDR</a>
-                <a href="#">Chi sono</a>
-                <a href="#contact">Contatti</a>
-            </div> -->
         </nav>
         <div class="footer__politica container">
             <a href="#">Politica sulla riservatezza</a>
-            <a href="#">Sviluppo del sito web</a>
             <p>© 2025  Tutti i diritti riservati. La copia e qualsiasi altro utilizzo dei materiali presenti sul sito senza l'autorizzazione del titolare del copyright è vietato e comporta la responsabilità ai sensi della normativa vigente.</p>
         </div>
     </footer>

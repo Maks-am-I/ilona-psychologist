@@ -22,7 +22,7 @@
         list-style: none;
 
         & h3 {
-            @include fluid-text(30, 20);
+            @include fluid-text(30, 22);
             margin-top: 0;
             margin-bottom: rem(68);
             text-transform: uppercase;
@@ -31,7 +31,7 @@
 
         & > li {
             @include background-gradient;
-            @include fluid-text(20, 16);
+            @include fluid-text(22, 22);
             max-height: rem(128);
             max-width: rem(353);
             //overflow-y: hidden;
@@ -75,7 +75,7 @@
             }
 
             & h4 {
-                @include fluid-text(20, 16);
+                @include fluid-text(22, 22);
                 line-height: 1;
                 margin-bottom: rem(8);
                 margin-top: 0;

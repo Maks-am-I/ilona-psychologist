@@ -16,7 +16,7 @@
     }
 
     & ul {
-        @include fluid-text(24, 16);
+        @include fluid-text(24, 22);
         border-radius: var(--border-radius-s);
         padding: rem(20);
         line-height: 1;
@@ -26,7 +26,7 @@
         margin-bottom: 0;
 
         & h3 {
-            @include fluid-text(24, 16);
+            @include fluid-text(24, 22);
             font-weight: 500;
             text-transform: none;
             margin-top: 0;

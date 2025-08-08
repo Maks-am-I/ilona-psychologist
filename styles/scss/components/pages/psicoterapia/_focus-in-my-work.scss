@@ -12,7 +12,7 @@
     }
 
     & ul {
-        @include fluid-text(24, 16);
+        @include fluid-text(24, 22);
         line-height: 1;
         letter-spacing: -0.03rem;
         padding-left: rem(9);

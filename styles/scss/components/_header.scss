@@ -111,7 +111,7 @@
         }
 
         & .header__button-to-form {
-            @include fluid-text(22, 16);
+            @include fluid-text(22, 22);
 
             display: flex;
             height: rem(60);

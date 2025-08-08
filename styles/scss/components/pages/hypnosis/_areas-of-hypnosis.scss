@@ -20,7 +20,7 @@
 
         & > li {
             @include background-gradient;
-            @include fluid-text(20, 16);
+            @include fluid-text(22, 22);
 
             padding-top: rem(10) ;
             padding-bottom: rem(20) ;
@@ -34,7 +34,7 @@
             }
 
             & h4 {
-                font-size: rem(20);
+                font-size: rem(22);
                 line-height: 1.2;
                 text-transform: uppercase;
                 margin-top: rem(12);

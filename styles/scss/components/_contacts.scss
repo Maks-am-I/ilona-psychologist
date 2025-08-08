@@ -20,7 +20,7 @@
 
     &__phone {
         align-items: center;
-        font-size: rem(20);
+        font-size: rem(22);
         font-weight: 700;
         line-height: 1.4;
         margin-bottom: rem(6);
@@ -37,14 +37,14 @@
     }
 
     & address {
-        font-size: rem(20);
+        font-size: rem(22);
         line-height: 1;
         padding-right: rem(10);
         margin-bottom: rem(13);
     }
 
     & p {
-        font-size: rem(17);
+        font-size: rem(22);
         font-weight: 500;
         line-height: 1.21;
         padding-right: rem(6);
@@ -106,7 +106,7 @@
 
         &__map {
             position: absolute;
-            z-index: -1;
+            //z-index: -1;
             right: 3%;
             top: 29%;
             width: 58%;

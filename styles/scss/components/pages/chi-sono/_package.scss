@@ -14,7 +14,7 @@
         border-radius: var(--border-radius-l);
 
         & h2 {
-        @include fluid-text(30, 20);
+        @include fluid-text(30, 22);
 
         text-transform: uppercase;
         margin-top: rem(4);
@@ -22,14 +22,14 @@
         }
 
         & ul {
-            @include fluid-text(24, 16);
+            @include fluid-text(24, 22);
             margin-top: rem(24);
             margin-bottom: rem(22);
             padding-left: 0;
             line-height: 1;
 
             & h3 {
-                @include fluid-text(24, 16);
+                @include fluid-text(24, 22);
                 font-weight: 500;
                 text-transform: unset;
                 letter-spacing: -0.03rem;
@@ -42,7 +42,7 @@
         }
 
         & p {
-            @include fluid-text(24, 18);
+            @include fluid-text(24, 22);
             text-transform: uppercase;
             line-height: 1.2;
         }

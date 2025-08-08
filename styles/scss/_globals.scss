@@ -1,7 +1,7 @@
 @use 'helpers' as *;
 
 body {
-    @include fluid-text(26, 16);
+    @include fluid-text(26, 22);
 
     font-family: var(--font-family-base);
     background-color: var(--color-main);
@@ -31,7 +31,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    @include fluid-text(30, 18);
+    @include fluid-text(30, 22);
     text-transform: uppercase;
 }
 

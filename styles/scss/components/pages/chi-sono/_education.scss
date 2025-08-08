@@ -14,7 +14,7 @@
     }
 
     & h3 {
-        @include fluid-text(30, 18);
+        @include fluid-text(30, 22);
 
         margin-top: 0;
         margin-bottom: rem(33);
@@ -22,7 +22,7 @@
     }
 
     & ul {
-        @include fluid-text(26, 18);
+        @include fluid-text(26, 22);
 
         border: 1px solid var(--color-fonts);
         border-radius: var(--border-radius-s);
@@ -31,7 +31,7 @@
         padding-bottom: rem(19);
 
         & h4 {
-            @include fluid-text(26, 18);
+            @include fluid-text(26, 22);
             margin-top: rem(16);
             margin-bottom: rem(15);
         }
