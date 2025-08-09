@@ -7,6 +7,7 @@
     gap: rem(24);
     padding-left: rem(5);
     font-size: rem(22);
+    width: 100%;
 
     & div {
         display: flex;
@@ -97,42 +98,85 @@
     }
 }
 
-.custom-radio {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-/* Скрываем нативный radio */
-.custom-radio input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-/* Кастомный кружок */
-.radio-icon {
-    display: inline-block;
-    width: rem(20);
-    height: rem(20);
-    border: 1px solid var(--color-fonts);
-    border-radius: 6px;
-    position: relative;
-    transition: all 0.3s;
+// .custom-radio {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+//     cursor: pointer;
+// }
+// /* Скрываем нативный radio */
+// .custom-radio input {
+//     position: absolute;
+//     opacity: 0;
+//     width: 0;
+//     height: 0;
+// }
+// /* Кастомный кружок */
+// .radio-icon {
+//     display: inline-block;
+//     width: rem(20);
+//     height: rem(20);
+//     border: 1px solid var(--color-fonts);
+//     border-radius: 6px;
+//     position: relative;
+//     transition: all 0.3s;
+// }
+
+// /* Точка внутри выбранного radio */
+// .custom-radio input:checked + .radio-icon::after {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translateX(-50%) translateY(-50%);
+//     width: rem(10);
+//     height: rem(10);
+//     background: var(--color-fonts);
+//     border-radius: 50%;
+// }
+
+#wpforms-form-166,
+#wpforms-166 {
+    width: 100%;
 }
 
-/* Точка внутри выбранного radio */
-.custom-radio input:checked + .radio-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: rem(10);
-    height: rem(10);
-    background: var(--color-fonts);
-    border-radius: 50%;
+.wpforms-field-label {
+    font-size: rem(22) !important;
+    margin-bottom: 0 !important;
 }
+
+.wpforms-field-label-inline {
+    font-size: rem(22) !important;
+}
+
+#wpforms-166-field_4,
+#wpforms-166-field_5,
+#wpforms-166-field_6 {
+    max-width: 100%;
+}
+
+#wpforms-166-field_9 {
+    margin-top: rem(15) !important;
+}
+
+.wpforms-submit {
+    margin: 0 auto !important;
+    width: 100% !important;
+    background-color: var(--color-fonts) !important;
+    color: var(--color-light) !important;
+}
+
+//radio-button
+// #wpforms-166-field_9_1,
+// #wpforms-166-field_9_2 {
+//     display: inline-block;
+//     width: rem(20) !important;
+//     height: rem(20) !important;
+//     border: 1px solid var(--color-fonts) !important;
+//     border-radius: 6px !important;
+//     position: relative !important;
+//     transition: all 0.3s !important;
+// }
 
 @media (min-width: 960px) {
     .form {
@@ -166,4 +210,4 @@
             }
         }        
     }
-} 
+}

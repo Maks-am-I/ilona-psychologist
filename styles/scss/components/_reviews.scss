@@ -25,7 +25,8 @@
 
     & ul {
         display: flex;
-        align-items: center;
+        //align-items: center;
+        padding-block: rem(10);
         gap: rem(19);
         list-style: none;
         overflow-x: scroll;
@@ -37,9 +38,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: rem(216);
+            min-height: 100%;
             min-width: rem(353);
-            padding: 0 rem(19);
+            padding: rem(19);
             border: 1px solid var(--color-accent);
             border-radius: var(--border-radius-s);
 

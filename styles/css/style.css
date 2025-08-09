@@ -1252,7 +1252,7 @@ a[class] {
 }
 .reviews ul {
   display: flex;
-  align-items: center;
+  padding-block: 0.625rem;
   gap: 1.1875rem;
   list-style: none;
   overflow-x: scroll;
@@ -1264,9 +1264,9 @@ a[class] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 13.5rem;
+  min-height: 100%;
   min-width: 22.0625rem;
-  padding: 0 1.1875rem;
+  padding: 1.1875rem;
   border: 1px solid var(--color-accent);
   border-radius: var(--border-radius-s);
 }
@@ -1339,6 +1339,7 @@ a[class] {
   gap: 1.5rem;
   padding-left: 0.3125rem;
   font-size: 1.375rem;
+  width: 100%;
 }
 .form div {
   display: flex;
@@ -1412,43 +1413,35 @@ a[class] {
   width: 1.875rem;
 }
 
-.custom-radio {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
+#wpforms-form-166,
+#wpforms-166 {
+  width: 100%;
 }
 
-/* Скрываем нативный radio */
-.custom-radio input {
-  position: absolute;
-  opacity: 0;
-  width: 0;
-  height: 0;
+.wpforms-field-label {
+  font-size: 1.375rem !important;
+  margin-bottom: 0 !important;
 }
 
-/* Кастомный кружок */
-.radio-icon {
-  display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 1px solid var(--color-fonts);
-  border-radius: 6px;
-  position: relative;
-  transition: all 0.3s;
+.wpforms-field-label-inline {
+  font-size: 1.375rem !important;
 }
 
-/* Точка внутри выбранного radio */
-.custom-radio input:checked + .radio-icon::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 0.625rem;
-  height: 0.625rem;
-  background: var(--color-fonts);
-  border-radius: 50%;
+#wpforms-166-field_4,
+#wpforms-166-field_5,
+#wpforms-166-field_6 {
+  max-width: 100%;
+}
+
+#wpforms-166-field_9 {
+  margin-top: 0.9375rem !important;
+}
+
+.wpforms-submit {
+  margin: 0 auto !important;
+  width: 100% !important;
+  background-color: var(--color-fonts) !important;
+  color: var(--color-light) !important;
 }
 
 @media (min-width: 960px) {

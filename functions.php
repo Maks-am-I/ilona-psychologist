@@ -35,5 +35,3 @@
     add_theme_support( 'title-tag' );
     add_theme_support( 'custom-log' );
     add_theme_support('menus');
-
-

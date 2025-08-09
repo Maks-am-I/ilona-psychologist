@@ -6,17 +6,18 @@
                 will get back to you as soon as possible
             </p> -->
             <div class="callback__form form">
-                <div>
+                <?php echo do_shortcode('[wpforms id="166" title="false"]'); ?>
+                <!-- <div class="callback__name">
                     <label for="name" title="Nome, Cognome">Nome, Cognome</label>
                     <input type="text" name="name" id="name" required>
                 </div>
                 
-                <div>
+                <div class="callback__email">
                     <label for="email" title="email">Email</label>
                     <input type="email" name="email" id="email" required>
                 </div>
                 
-                <div>
+                <div class="callback__phone">
                     <label for="phone" title="telefono">Telefono</label>
                     <input type="tel" name="phone" id="phone" required>
                 </div>
@@ -37,9 +38,9 @@
                     </label>
                 </div>
                 
-                <textarea placeholder="Messaggio" name="message" id="message"></textarea>
+                <textarea class="callback__textarea" placeholder="Messaggio" name="message" id="message"></textarea>
 
-                <button type="submit">Invia</button>
+                <button class="callback__submit" type="submit">Invia</button>
 
                 <div class="form__permission">
                     <label class="custom-radio">
@@ -49,7 +50,7 @@
                         art. 13 Dlgs 196/2003 in materia di protezione dei dati 
                         personali</span>
                     </label>
-                </div>
+                </div> -->
                 
             </div>
         </section>
