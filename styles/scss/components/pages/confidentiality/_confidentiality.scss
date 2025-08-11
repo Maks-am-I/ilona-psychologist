@@ -1,0 +1,25 @@
+@use "./../../../helpers/" as *;
+
+.confidentiality {
+    padding-inline: rem(40);
+    padding-block: rem(70);
+
+    &__list-1,
+    &__list-2 {
+        list-style: none;
+
+        & ul {
+            list-style: none;
+        } 
+
+        & li {
+            &:not(:last-of-type) {
+                margin-bottom: rem(10);
+            }
+        }
+    }
+
+    &__list-1 {
+        margin-bottom: rem(40);
+    }
+}

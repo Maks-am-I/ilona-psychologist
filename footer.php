@@ -151,7 +151,7 @@
             ?> 
         </nav>
         <div class="footer__politica container">
-            <a href="#">Politica sulla riservatezza</a>
+            <a href="<?php echo home_url('confidentiality'); ?>">Politica sulla riservatezza</a>
             <p>© 2025  Tutti i diritti riservati. La copia e qualsiasi altro utilizzo dei materiali presenti sul sito senza l'autorizzazione del titolare del copyright è vietato e comporta la responsabilità ai sensi della normativa vigente.</p>
         </div>
     </footer>

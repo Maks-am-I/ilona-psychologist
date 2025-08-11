@@ -82,17 +82,15 @@
         height: rem(315);
         padding: 0;
         background-repeat: no-repeat;
-        background-position-x: rem(-6);
-        background-position-y: rem(-3);
-        background-size: rem(368) rem(329);
+        background-size: 100% 100%;
     }
 
     .img-1 {
-        background-image: url('./../../assets/images/session_mobile.png');    
+        background-image: url('./../../assets/images/books-2.png');
     }
 
     .img-2 {
-        background-image: url('./../../assets/images/books.png');
+        background-image: url('./../../assets/images/books-3.png');
     }
 
     &__card-3 {
