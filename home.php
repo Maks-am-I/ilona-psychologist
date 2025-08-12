@@ -259,11 +259,17 @@ Template Name: Home
 		                setup_postdata( $post );
 		        ?>
 		        <li >
+                    <h3>
+                        <?php the_title(); ?>
+                    </h3>
                     <p>
                         <?php the_content(); ?>
                     </p>
                 </li>
 		        <?php } } wp_reset_postdata(); ?>
             </ul>
+            <a class="button-to-form" href="https://share.google/CPJlv0BcnQfqIAnXH" target="_blank">
+                Guarda tutte le recensioni
+            </a>
         </section>
 <?php get_footer(); ?>
